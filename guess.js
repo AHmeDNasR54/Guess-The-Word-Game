@@ -223,4 +223,4 @@ function handleGuesses(){
 
 
 
-window.onload=generateInput;
+document.addEventListener('DOMContentLoaded', generateInput);
