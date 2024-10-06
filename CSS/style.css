@@ -7,14 +7,21 @@
 body{
     margin: 0;
     background-color: #eee;
+    background-image: url(../7.webp);
+    background-size: cover;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  color: black;
 }
 
 h1{
     text-align: center;
     padding: 20px;
     margin: 0 0 50px;
-    background-color: white;
+    /* background-color: white; */
+    color: white;
 }
 
 .guess-game
@@ -25,6 +32,7 @@ h1{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
     .game-area
     {
        .inputs{
@@ -121,6 +129,7 @@ h1{
             padding: 15px;
             background-color: white;
             margin-bottom: 10px;
+            color: black;
         }
         .key
         {
@@ -162,6 +171,12 @@ h1{
     /* align-items: flex-start; */
     /* justify-content: space-between; */
 }
+.game-area{
+  margin: 20px auto;
+}
+.key-colors{
+  margin: 20px auto;
+}
 }
 .message {
   text-align: center;
@@ -187,6 +202,9 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #0a2638;
     color: white;
+    span{
+      color: #f44336;
+    }
 }
