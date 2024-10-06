@@ -2,7 +2,7 @@
 let gameName="Guess A Football Word";
 document.title=gameName;
 document.querySelector("h1").innerHTML=gameName;
-document.querySelector("footer").innerHTML=`${gameName} Game Created By Elzero Web School`;
+document.querySelector("footer").innerHTML=`${gameName} Game Created By <span>Ahmed Nasr</span>`;
 
 // setting game options
 let numberOfTries=5;
@@ -128,9 +128,9 @@ function handleGuesses(){
 
     // check If User Win Or Lose
     if(successGuess){
-        messageArea.innerHTML=`You Win , The Word Is <span>${wordToGuess}</span>`;
+        messageArea.innerHTML=`You Win , The Word Is <span>${wordToGuess}</span> <br>`;
         if (numberOfHints === 3) {
-            messageArea.innerHTML+=`<p>Congratz You Didn't Use Hints</p>`;
+            messageArea.innerHTML=`You Win , The Word Is <span>${wordToGuess}</span><p>Congratz You Didn't Use Hints</p><br>`;
           }
         //Add Disabled Class On All Try Dives 
         let AllTries =document.querySelectorAll(".inputs > div");
